@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/jpashop
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+    # 이런 설정들은 스프링 부트에 레퍼턴스 도큐먼트 보고 공부해야한다,,
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+#로깅 레벨 정하기.
+logging.level:
+  org.hibernate.SQL: debug
+    #  org.hibernate.type: trace
